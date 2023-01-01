@@ -3,6 +3,8 @@ package reverseproxy
 import (
 	"context"
 	"fmt"
+	"github.com/aliforever/go-reverseproxy/internal/ascii"
+	"github.com/aliforever/go-reverseproxy/internal/httpguts"
 	"io"
 	"log"
 	"mime"
@@ -10,8 +12,6 @@ import (
 	"net/http"
 	"net/textproto"
 	"net/url"
-	"reverseproxy/internal/ascii"
-	"reverseproxy/internal/httpguts"
 	"strings"
 	"sync"
 	"time"
